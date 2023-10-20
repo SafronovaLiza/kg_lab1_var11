@@ -24,5 +24,8 @@ jobs:
     needs: build
     runs-on: self-hosted
     steps:
+    - name: Checkout repository
+    - uses: actions/checkout@v3
+    
     - name: Run tests
       run: python tests.py
