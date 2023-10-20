@@ -16,16 +16,16 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - name: Checkout repository
-    - uses: actions/checkout@v3
+      - name: Checkout repository
+      - uses: actions/checkout@v3
    
 
   tests:
     needs: build
     runs-on: self-hosted
     steps:
-    - name: Checkout repository
-    - uses: actions/checkout@v3
+      - name: Checkout repository
+      - uses: actions/checkout@v3
     
-    - name: Run tests
-      run: python tests.py
+      - name: Run tests
+        run: python tests.py
