@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -28,8 +28,6 @@ jobs:
   tests:
     needs: build
     runs-on: self-hosted
-    container:
-      image: python:3.x
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
