@@ -15,9 +15,6 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-
 
   tests:
     needs: build
@@ -28,8 +25,6 @@ jobs:
         
       - name: Set up Python
         uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
 
       - name: Run tests
         run: python tests.py
